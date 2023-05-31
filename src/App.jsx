@@ -1,10 +1,15 @@
 import { useState } from 'react'
 
+import Header from './components/header'
+
 function App() {
 
   return (
     <>
-      <h1> expenses manager</h1>
+
+      <div className="">
+        <Header/> 
+        </div>
     </>
   )
 }
