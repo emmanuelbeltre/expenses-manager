@@ -4,11 +4,16 @@ import Header from './components/header'
 
 function App() {
 
+  const [budget, setBudget] = useState(0);
+
   return (
     <>
 
-      <div className="">
-        <Header/> 
+      <div >
+        <Header
+          budget = {budget}
+          setBudget= {setBudget}
+        /> 
         </div>
     </>
   )

@@ -1,13 +1,16 @@
 import React from 'react'
 import { NewBudget } from './NewBudget'
 
-const header = () => {
+const header = ({budget, setBudget}) => {
   return (
     <header>
-        <h1>Budget Header</h1>
+        <h1>Budget Header </h1>
 
         <div>
-            <NewBudget/>
+            <NewBudget
+            budget = {budget}
+            setBudget= {setBudget}          
+            />
         </div>
     </header>
   )
